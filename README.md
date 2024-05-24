@@ -2,20 +2,6 @@
 
 This examples shows how to use Docker with Next.js and deploy to multiple environment with different env values. Based on the [deployment documentation](https://nextjs.org/docs/deployment#docker-image).
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-docker-multi-env nextjs-docker-multi-env
-# or
-yarn create next-app --example with-docker-multi-env nextjs-docker-multi-env
-# or
-pnpm create next-app --example with-docker-multi-env nextjs-docker-multi-env
-```
-
-Enter the values in the `.env.development.sample`, `.env.staging.sample`, `.env.production.sample` files to be used for each environments.
-
 ## Using Docker and Makefile
 
 ### Development environment - for doing testing
@@ -50,8 +36,10 @@ Open http://localhost:3003
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 ```
 
